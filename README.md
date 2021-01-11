@@ -41,3 +41,57 @@ Outputs
 The program continuously outputs boards of generations of the game. The program terminates if
 every cell on the board becomes dead or if the population did not change for the past 10
 generations.
+
+Explanation
+The program runs using a recursive function that calls itself providing a modified by the rules of
+Conway’s Game of Life dynamic 2D array with each new generation, it allows the user to set the
+initial parameters of the game and it automatically terminates in case of continuous stagnated
+repeating populations or in case of the end of the whole population of cells.
+
+Data structures
+The main data structure used in the program is a 2D dynamic array. It is used for storing the state
+of the board and running the next generations based on the arrays of the previous ones. 2D
+dynamic was chosen as the most appropriate data structure for this particular problem. It is also
+convenient and straightforward to visualize the 2D array for showing the state of board.
+Another data structure was declared for a more compact track of the board’s population -
+population_track, it combines two integers: one for storing previous generations’ population and
+the other one is for counting generations with repeating numbers of population.
+
+Functions
+print_board - prints the board into the console and saves it in the output file. Input parameters:
+number of rows and columns of the board as n, m integers, the board in the form of 2D dynamic
+array.
+
+number_of_alive_neighbours - returns the number of alive neighbours around a specific cell as
+an integer.
+Input parameters: number of rows and columns of the board as n, m integers, the board in the
+form of 2D dynamic array, the coordinates of the cell in the board as i, j integers.
+
+total_alive_cells - returns the total number of alive cells on the board as an integer.
+Input parameters: number of rows and columns of the board as n, m integers, the board in the
+form of 2D dynamic array.
+
+run_generation - runs a generation according to the rules of Conway's Game of Life if there are
+alive cells on the board the function will run the next generation too by recursively calling itself
+or otherwise the function will terminate.
+Input parameters: number of rows and columns of the board as n, m integers, the board in the
+form of 2D dynamic array, is_automatic parameter as an integer, which equals to 0 or 1, that
+determines if run_generation function will run the next generation automatically or only after the
+press of the Enter key by the user.
+
+input_file_start - starts the game with an input from the input file by calling run_generation
+function for the first time after run_generation function terminates it notifies the user about the
+end of the program by console print.
+Input parameters: is_automatic parameter as an integer, which equals to 0 or 1, that determines if
+run_generation function will run the next generation automatically or only after the press of the
+Enter key by the user, the input_file_start passes this parameter to the run_generation function.
+
+random_board_start - starts the game with a randomly generated board by calling
+run_generation function for the first time after run_generation function terminates it notifies the
+user about the end of the program by console print.
+Input parameters: is_automatic parameter as an integer, which equals to 0 or 1, that determines if
+run_generation function will run the next generation automatically or only after the press of the
+Enter key by the user, the input_file_start passes this parameter to the run_generation function.
+
+main - main menu of the program, asks the user parameters of the game, calls either
+input_file_start or random_board start depending on the chosen by the user option.
