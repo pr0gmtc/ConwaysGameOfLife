@@ -1,6 +1,8 @@
 # ConwaysGameOfLife
 
 ![Alt Text](https://media.giphy.com/media/YacMaaM6GULoEIbZAF/giphy.gif)
+![Alt Text](https://media.giphy.com/media/k37XuDb20d0i7wzIh1/giphy.gif)
+
 
 ## Goal of the program
 The program is a C console application that runs Conway's Game of Life, a cellular automaton
