@@ -11,10 +11,12 @@ game which means that the program only needs an initial board input. Other inter
 user do not exist. During a run of the game a user can observe different patterns emerging and
 changing during the evolution of the Game’s population.
 
+
 Requirements
 
 The program is a C console application, it should be run in the appropriate environment. A
 computer needs a C compiler to build the program.
+
 
 Inputs
 
@@ -32,6 +34,7 @@ automatically, every certain time interval. The user should decide between the t
 entering 1 or 2 accordingly.
 The third parameter is the size of the board, the user is required to enter the number of rows and
 columns of the board.
+
 
 Outputs
 
