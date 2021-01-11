@@ -4,6 +4,7 @@ Conway’s Game of Life
 User’s Manual
 
 Goal of the program
+
 The program is a C console application that runs Conway's Game of Life, a cellular automaton
 invented by the British mathematician John Horton Conway in 1970. The game is a zero-player
 game which means that the program only needs an initial board input. Other interactions with a
@@ -11,10 +12,12 @@ user do not exist. During a run of the game a user can observe different pattern
 changing during the evolution of the Game’s population.
 
 Requirements
+
 The program is a C console application, it should be run in the appropriate environment. A
 computer needs a C compiler to build the program.
 
 Inputs
+
 The program allows the user to determine the initial state of the game by taking the input file that
 they provide or by creating a random initial state of the game if the user chooses the latter option.
 The user should decide between the two options by entering 1 or 2 accordingly.
@@ -31,6 +34,7 @@ The third parameter is the size of the board, the user is required to enter the 
 columns of the board.
 
 Outputs
+
 The program continuously outputs boards of generations of the game. The program terminates if
 every cell on the board becomes dead or if the population did not change for the past 10
 generations.
