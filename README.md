@@ -1,6 +1,7 @@
 # ConwaysGameOfLife
 The program is a C console application that runs Conway's Game of Life, a cellular automaton
 invented by the British mathematician John Horton Conway in 1970.
+
 The game is a zero-player game which means that the program only needs an initial board input. Other interactions with a
 user do not exist. During a run of the game a user can observe different patterns emerging and
 changing during the evolution of the Game’s population.
