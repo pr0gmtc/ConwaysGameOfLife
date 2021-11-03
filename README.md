@@ -4,10 +4,7 @@ invented by the British mathematician John Horton Conway in 1970.
 The game is a zero-player game which means that the program only needs an initial board input. Other interactions with a
 user do not exist. During a run of the game a user can observe different patterns emerging and
 changing during the evolution of the Game’s population.
-
 More can be read about the Game of Life in this article: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
-![Alt Text](https://media.giphy.com/media/YacMaaM6GULoEIbZAF/giphy.gif)
-![Alt Text](https://media.giphy.com/media/k37XuDb20d0i7wzIh1/giphy.gif)
 
 ## Requirements
 The program is a C console application, it should be run in the appropriate environment. A
@@ -34,6 +31,9 @@ columns of the board.
 The program continuously outputs boards of generations of the game. The program terminates if
 every cell on the board becomes dead or if the population did not change for the past 10
 generations.
+
+![Alt Text](https://media.giphy.com/media/YacMaaM6GULoEIbZAF/giphy.gif)
+![Alt Text](https://media.giphy.com/media/k37XuDb20d0i7wzIh1/giphy.gif)
 
 ## Explanation
 The program runs using a recursive function that calls itself providing a modified by the rules of
