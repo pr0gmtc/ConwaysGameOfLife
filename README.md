@@ -10,6 +10,7 @@ invented by the British mathematician John Horton Conway in 1970. The game is a 
 game which means that the program only needs an initial board input. Other interactions with a
 user do not exist. During a run of the game a user can observe different patterns emerging and
 changing during the evolution of the Game’s population.
+
 More can be read about the Game of Life in this article: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 
